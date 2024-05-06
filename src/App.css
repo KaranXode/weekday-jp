@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.main{
+    padding: 0 36px 36px 36px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    padding: 24px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 26rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 16px;
+    background: rgb(255, 255, 255);
+    z-index: 2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.companyBtn{
+    padding: 18px 24px;
+    font-size: 16px;
+    line-height: 1.125em;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 32px;
+    text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.jobCard:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.01);
 }
-
-.App-link {
-  color: #61dafb;
+@media (max-width:767px) {
+    .main{
+        padding: 8px;
+    }
+    .header{
+        gap: 0;
+        padding: 20px 0;
+    }
+    .companyBtn{
+        display: none;
+    }
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.white-gredient{
+    background: rgb(255,255,255);
+background: linear-gradient(179deg, rgba(255,255,255,0.3463979341736695) 0%, rgba(255,255,255,1) 36%);
 }
